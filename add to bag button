@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>welcome</title>
+</head>
+<body>
+  <h1>gla university</h1>
+  <button class="click-me" onclick="quantity++;document.querySelector(`#null`).innerText = `your bag has ${quantity} items` ;"> add to bag</button>
+  <button class="click-me" onclick="quantity--;document.querySelector(`#null`).innerText = `your bag has ${quantity} items` ;"> move to wishlist</button>
+  <button class="click-me" onclick="quantity += 2;document.querySelector(`#null`).innerText = `your bag has ${quantity} items` ;"> add 1+1 sale item</button>
+  <h1 id="null"></h1>
+  <script>
+    let quantity = 0;
+    document.querySelector(`#null`).innerText = `your bag has ${quantity} items` ;
+
+  </script>
+   
+</body>
+</html>
